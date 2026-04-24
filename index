@@ -293,6 +293,48 @@
       font-size: 0.86rem;
     }
 
+    .application-visual {
+      min-height: 120px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--accent-light), #ffffff);
+      border: 1px solid var(--line);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .intera-logo {
+      min-height: 120px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      font-size: 2rem;
+      margin-bottom: 18px;
+      text-decoration: none;
+    }
+
+    .intera-logo:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .intera-card {
+      border-color: rgba(11, 93, 79, 0.28);
+    }
+
     .publication {
       display: grid;
       gap: 6px;
@@ -404,6 +446,7 @@
       <div class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#applications">Applications</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
         <a href="#mentorship">Mentorship</a>
@@ -475,7 +518,7 @@
             <h3>Scientific profile</h3>
             <p><strong>Scientific Advisor:</strong> <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a></p>
             <p>
-              I specialize in experimental nuclear physics, with a focus on active target detectors and reactions with exotic beams. My research spans experimental nuclear astrophysics, nuclear structure, detector instrumentation, and nuclear technology applications.
+              I specialize in experimental nuclear physics, with a focus on active target detectors, reactions with exotic beams, and applied nuclear techniques. My research spans experimental nuclear astrophysics, nuclear structure, detector instrumentation, neutron imaging, environmental radiation measurements, and radon detection and mitigation.
             </p>
           </div>
           <div class="card">
@@ -521,6 +564,36 @@
           <span class="tag">Exotic beams</span>
           <span class="tag">Detector instrumentation</span>
           <span class="tag">Nuclear technology applications</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Applications</h2>
+          <p class="lead">
+            A central part of my work connects nuclear physics methods with practical applications in environmental monitoring, imaging, and radiation protection.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="application-visual">Neutron Imaging</div>
+            <h3>Neutron imaging</h3>
+            <p>Development and application of neutron-based imaging methods for non-destructive studies, materials analysis, and nuclear technology applications.</p>
+          </div>
+          <div class="card">
+            <div class="application-visual">Radon</div>
+            <h3>Radon detection & mitigation</h3>
+            <p>Applied work on radon detection, environmental radiation monitoring, and mitigation strategies to support public health and radiation safety.</p>
+          </div>
+          <div class="card intera-card">
+            <a href="https://intera.es/" target="_blank" rel="noopener" class="intera-logo" aria-label="INTERA website">
+              <img src="intera_logo.png" alt="INTERA logo" style="max-width: 100%; max-height: 80px;">
+            </a>
+            <h3>Scientific advising</h3>
+            <p>I serve as a scientific advisor for <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a>, a company specializing in radon detection and mitigation, supporting the connection between nuclear science, environmental radiation, and real-world implementation.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -696,12 +769,12 @@
             </p>
           </div>
           <div>
-            <p><strong>Email:</strong> <a href="mailto:beceiro@msu.edu">beceiro@msu.edu</a></p>
+            <p><strong>Email:</strong> <a href="mailto:saul.beceiro@udc.es">saul.beceiro@udc.es</a></p>
             <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">0000-0003-2295-473X</a></p>
             <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Profile</a></p>
             <p><strong>Affiliations:</strong> UDC · FRIB · MSU · AIMS Senegal</p>
             <div class="actions">
-              <a class="button" href="mailto:beceiro@msu.edu">Email me</a>
+              <a class="button" href="mailto:saul.beceiro@udc.es">Email me</a>
               <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Download CV</a>
             </div>
           </div>
@@ -721,4 +794,3 @@
   </script>
 </body>
 </html>
-
