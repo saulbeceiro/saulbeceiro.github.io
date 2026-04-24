@@ -431,9 +431,7 @@
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile highlights">
-          <div class="photo-placeholder">
-            Replace this block with your professional photo
-          </div>
+        <img src="profilePIC.png" alt="Saúl Beceiro Novo" class="profile-photo">
           <div class="metric-list">
             <div class="metric">
               <strong>79</strong>
