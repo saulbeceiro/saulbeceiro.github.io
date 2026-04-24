@@ -150,6 +150,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       padding: 12px 18px;
       border-radius: 999px;
       font-weight: 800;
@@ -181,12 +182,21 @@
       box-shadow: var(--shadow);
     }
 
-.profile-photo {
-  width: 100%;
-  border-radius: 24px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+    .photo-placeholder {
+      aspect-ratio: 1 / 1;
+      border-radius: 24px;
+      background: linear-gradient(135deg, var(--accent), #1d8f77);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 22px;
+    }
 
     .metric-list {
       display: grid;
@@ -417,12 +427,19 @@
             <span>Guest Lecturer · AIMS Senegal</span>
           </div>
           <div class="actions">
-            <a class="button primary" href="#research">Explore research</a>
-            <a class="button secondary" href="#contact">Contact</a>
+            <a class="button primary" href="BeceiroNovo_CV2025_EN.pdf" download>
+              <span aria-hidden="true">⬇</span> Download CV
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">
+              <span aria-hidden="true">🎓</span> Google Scholar
+            </a>
+            <a class="button secondary" href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">
+              <span aria-hidden="true">ⓘD</span> ORCID
+            </a>
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile highlights">
-        <img src="profilePIC.png" alt="Saúl Beceiro Novo" class="profile-photo">
+          <img src="profilePIC.png" alt="Saúl Beceiro Novo" class="profile-photo">
           <div class="metric-list">
             <div class="metric">
               <strong>79</strong>
@@ -456,6 +473,7 @@
         <div class="grid-2">
           <div class="card">
             <h3>Scientific profile</h3>
+            <p><strong>Scientific Advisor:</strong> <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a></p>
             <p>
               I specialize in experimental nuclear physics, with a focus on active target detectors and reactions with exotic beams. My research spans experimental nuclear astrophysics, nuclear structure, detector instrumentation, and nuclear technology applications.
             </p>
@@ -479,6 +497,10 @@
           </p>
         </div>
         <div class="grid-3">
+          <div class="card">
+            <h3>Applications: neutron imaging & radon mitigation</h3>
+            <p>Applied nuclear techniques for neutron imaging, environmental radiation measurements, and radon detection and mitigation, connecting fundamental research with societal and technological impact.</p>
+          </div>
           <div class="card">
             <h3>Experimental nuclear astrophysics</h3>
             <p>Studying nuclear reactions relevant to astrophysical environments, including processes connected to nucleosynthesis and explosive stellar scenarios.</p>
@@ -675,9 +697,13 @@
           </div>
           <div>
             <p><strong>Email:</strong> <a href="mailto:beceiro@msu.edu">beceiro@msu.edu</a></p>
-            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X">0000-0003-2295-473X</a></p>
+            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">0000-0003-2295-473X</a></p>
+            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Profile</a></p>
             <p><strong>Affiliations:</strong> UDC · FRIB · MSU · AIMS Senegal</p>
-            <a class="button" href="mailto:beceiro@msu.edu">Email me</a>
+            <div class="actions">
+              <a class="button" href="mailto:beceiro@msu.edu">Email me</a>
+              <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Download CV</a>
+            </div>
           </div>
         </div>
       </div>
@@ -695,3 +721,4 @@
   </script>
 </body>
 </html>
+
