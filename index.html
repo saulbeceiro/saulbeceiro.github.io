@@ -180,11 +180,12 @@
       border-radius: 28px;
       padding: 28px;
       box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .profile-photo {
   width: 100%;
-  max-width: 240px;
+  max-width: 260px;
   border-radius: 24px;
   object-fit: cover;
   display: block;
@@ -250,6 +251,12 @@
       border-radius: 24px;
       padding: 24px;
       box-shadow: 0 10px 30px rgba(15, 40, 30, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 38px rgba(15, 40, 30, 0.08);
     }
 
     .card h3 {
@@ -323,6 +330,11 @@
     .intera-logo:hover {
       text-decoration: none;
       transform: translateY(-1px);
+    }
+
+    .intera-logo img {
+      display: block;
+      margin: 0 auto;
     }
 
     .intera-card {
@@ -456,7 +468,7 @@
           <div class="eyebrow">Experimental Nuclear Physics · Detector Instrumentation · Physics Education</div>
           <h1>Saúl Beceiro Novo, Ph.D.</h1>
           <p class="hero-subtitle">
-            I am an experimental nuclear physicist working on active target detectors, reactions with exotic beams, nuclear astrophysics, nuclear structure, and inclusive physics education.
+            I am an experimental nuclear physicist working at the intersection of exotic nuclear systems, detector instrumentation, and real-world applications such as neutron imaging and radon detection and mitigation.
           </p>
           <div class="affiliations">
             <span>Ramón y Cajal Researcher · Universidade da Coruña</span>
@@ -535,10 +547,6 @@
         </div>
         <div class="grid-3">
           <div class="card">
-            <h3>Applications: neutron imaging & radon mitigation</h3>
-            <p>Applied nuclear techniques for neutron imaging, environmental radiation measurements, and radon detection and mitigation, connecting fundamental research with societal and technological impact.</p>
-          </div>
-          <div class="card">
             <h3>Experimental nuclear astrophysics</h3>
             <p>Studying nuclear reactions relevant to astrophysical environments, including processes connected to nucleosynthesis and explosive stellar scenarios.</p>
           </div>
@@ -611,7 +619,7 @@
           </div>
           <div class="card">
             <h3>Active Target Time Projection Chamber</h3>
-            <p>Development of an Active Target Time Projection Chamber. National Science Foundation, USA, 2009–2012.</p>
+            <p>Development of an Active Target Time Projection Chamber. National Science Foundation, USA, 2009–2012. Co-Principal Investigator.</p>
           </div>
         </div>
       </div>
