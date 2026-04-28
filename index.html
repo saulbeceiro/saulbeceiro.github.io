@@ -1,194 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saúl Beceiro Novo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional website of Saúl Beceiro Novo, Ramón y Cajal Researcher at Universidade da Coruña, Adjunct Assistant Professor at FRIB and Michigan State University, and Guest Lecturer at AIMS Senegal." />
+  <title>Saúl Beceiro Novo | Nuclear Physics & Physics Education</title>
+  <style>
+    :root {
+      --bg: #f8faf9;
+      --card: #ffffff;
+      --text: #17211d;
+      --muted: #5f6f68;
+      --accent: #0b5d4f;
+      --accent-light: #e4f3ef;
+      --line: #d9e4df;
+      --shadow: 0 18px 45px rgba(15, 40, 30, 0.08);
+    }
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f8faf9;
-  color: #1a1a1a;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-h1 {
-  font-size: 2.5rem;
-}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
-  align-items: center;
-}
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-.profile-photo {
-  max-width: 220px;
-  border-radius: 20px;
-  display: block;
-  margin: auto;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.affiliation-logos {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
 
-.affiliation-logos img {
-  height: 45px;
-  background: white;
-  padding: 6px 10px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248, 250, 249, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 24px;
+    }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: 0.2s;
-}
+    .brand {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      font-size: 0.95rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-.research-image img {
-  width: 100%;
-  border-radius: 15px;
-}
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 600;
+    }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #777;
-}
-</style>
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 90px 0 64px;
+      background:
+        radial-gradient(circle at top right, rgba(11, 93, 79, 0.12), transparent 35%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .hero-kicker-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 22px 0 30px;
+    }
+
+    .hero-kicker {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px 14px;
+      box-shadow: 0 8px 22px rgba(15, 40, 30, 0.04);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .hero-kicker strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.86rem;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 5.25rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      margin-bottom: 24px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.12rem, 2vw, 1.38rem);
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .affiliations {
+      display: grid;
+      gap: 8px;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .affiliation-logos {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 18px 0 30px;
+    }
+
+    .affiliation-logos img {
+      height: 48px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      background: white;
+      padding: 7px 11px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 6px 16px rgba(15, 40, 30, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .affiliation-logos img:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(15, 40, 30, 0.08);
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid var(--accent);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 10px 24px rgba(11, 93, 79, 0.22);
+    }
+
+    .button.secondary {
+      color: var(--accent);
+      background: white;
+    }
+
+    .profile-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 90px;
+      background: linear-gradient(135deg, var(--accent-light), rgba(255,255,255,0));
+      z-index: 0;
+    }
+
+    .profile-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 24px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .metric-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .metric {
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.55rem;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+
+    section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      gap: 36px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 40, 30, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 38px rgba(15, 40, 30, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1.16rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    ul {
+      list-style-position: outside;
+      padding-left: 1.1rem;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.86rem;
+    }
+
+    .application-visual {
+      min-height: 150px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--accent-light), #ffffff);
+      border: 1px solid var(--line);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+
+    .research-image {
+      width: 100%;
+      height: 190px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--accent), #1d8f77);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+
+    .research-image img,
+    .application-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .research-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .intera-logo {
+      min-height: 120px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      font-size: 2rem;
+      margin-bottom: 18px;
+      text-decoration: none;
+    }
+
+    .intera-logo:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .intera-logo img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .intera-card {
+      border-color: rgba(11, 93, 79, 0.28);
+    }
+
+    .publication {
+      display: grid;
+      gap: 6px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .publication:first-child {
+      border-top: 1px solid var(--line);
+    }
+
+    .publication-title {
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .publication-meta {
+      color: var(--muted);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+      padding: 22px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+    }
+
+    .timeline-date {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .timeline-title {
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .timeline-text {
+      color: var(--muted);
+    }
+
+    .contact-box {
+      background: var(--accent);
+      color: white;
+      border-radius: 30px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .contact-box h2,
+    .contact-box p,
+    .contact-box a {
+      color: white;
+    }
+
+    .contact-box .button {
+      border-color: white;
+      color: var(--accent);
+      background: white;
+      width: fit-content;
+    }
+
+    footer {
+      padding: 34px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 880px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .hero-grid,
+      .section-heading,
+      .grid-3,
+      .grid-2,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 56px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 13vw, 4rem);
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="container hero">
-  <div>
-    <h1>Saúl Beceiro Novo</h1>
-    <p>Experimental nuclear physicist working on exotic nuclei, detector instrumentation, neutron imaging, and radon mitigation.</p>
-
-    <div class="affiliation-logos">
-      <img src="images/udc.png" alt="Universidade da Coruña">
-      <img src="images/citeni.png" alt="CITENI">
-      <img src="images/fitnae.png" alt="FiTNAE">
-      <img src="images/campusindustrial.png" alt="Campus Industrial">
-    </div>
-  </div>
-
-  <div>
-    <img src="images/profile.jpg" alt="Saúl Beceiro Novo" class="profile-photo">
-  </div>
-</div>
-
-<div class="container">
-  <h2>Research</h2>
-
-  <div class="grid-3">
-
-    <div class="card">
-      <div class="research-image">
-        <img src="images/accelerator.jpg" alt="Nuclear physics experimental setup">
+  <header>
+    <nav class="container">
+      <a class="brand" href="#top">Saúl Beceiro Novo</a>
+      <div class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#applications">Applications</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#group">Group</a>
+        <a href="#mentorship">Mentorship</a>
+        <a href="#contact">Contact</a>
       </div>
-      <h3>Experimental Nuclear Astrophysics</h3>
-      <p>Experiments with exotic beams and nuclear reactions relevant to astrophysics.</p>
-    </div>
+    </nav>
+  </header>
 
-    <div class="card">
-      <div class="research-image">
-        <img src="images/attpc.jpg" alt="Active Target Time Projection Chamber">
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Experimental Nuclear Physics · Detector Instrumentation · Physics Education</div>
+          <h1>Saúl Beceiro Novo, Ph.D.</h1>
+          <p class="hero-subtitle">
+            I am an experimental nuclear physicist working at the intersection of exotic nuclear systems, detector instrumentation, and real-world applications such as neutron imaging and radon detection and mitigation.
+          </p>
+          <div class="affiliations">
+            <span>Ramón y Cajal Researcher · Universidade da Coruña</span>
+            <span>Adjunct Assistant Professor · FRIB & Michigan State University</span>
+            <span>Guest Lecturer · AIMS Senegal</span>
+          </div>
+
+          <div class="affiliation-logos" aria-label="Institutional affiliations">
+            <img src="images/udc.png" alt="Universidade da Coruña logo">
+            <img src="images/citeni.png" alt="CITENI logo">
+            <img src="images/fitnae.png" alt="FiTNAE Research Group logo">
+            <img src="images/campusindustrial.png" alt="Campus Industrial logo">
+          </div>
+
+          <div class="hero-kicker-row" aria-label="Research highlights">
+            <div class="hero-kicker"><strong>Exotic nuclei</strong>R3B · SOLARIS · active targets</div>
+            <div class="hero-kicker"><strong>Applications</strong>Neutron imaging · radon mitigation</div>
+            <div class="hero-kicker"><strong>Education</strong>OER · accessibility · active learning</div>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="BeceiroNovo_CV2025_EN.pdf" download>
+              <span aria-hidden="true">⬇</span> Download CV
+            </a>
+            <a class="button secondary" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">
+              <span aria-hidden="true">🎓</span> Google Scholar
+            </a>
+            <a class="button secondary" href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">
+              <span aria-hidden="true">ⓘD</span> ORCID
+            </a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile highlights">
+          <img src="images/profilePIC.png" alt="Saúl Beceiro Novo" class="profile-photo">
+          <div class="metric-list">
+            <div class="metric">
+              <strong>79</strong>
+              peer-reviewed publications
+            </div>
+            <div class="metric">
+              <strong>~1177</strong>
+              citations, Scopus February 2026
+            </div>
+            <div class="metric">
+              <strong>17</strong>
+              h-index, Scopus
+            </div>
+            <div class="metric">
+              <strong>€2M+</strong>
+              PI or Co-PI funding portfolio
+            </div>
+          </div>
+        </aside>
       </div>
-      <h3>Active Target Detectors</h3>
-      <p>Development and application of AT-TPC systems.</p>
-    </div>
+    </section>
 
-    <div class="card">
-      <div class="research-image">
-        <img src="images/nuclear-structure.png" alt="Nuclear structure">
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About</h2>
+          <p class="lead">
+            My work connects frontier nuclear physics research with international collaboration, detector development, and evidence-based physics education.
+          </p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Scientific profile</h3>
+            <p><strong>Scientific Advisor:</strong> <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a></p>
+            <p>
+              I specialize in experimental nuclear physics, with a focus on active target detectors, reactions with exotic beams, and applied nuclear techniques. My research spans experimental nuclear astrophysics, nuclear structure, detector instrumentation, neutron imaging, environmental radiation measurements, and radon detection and mitigation.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Educational profile</h3>
+            <p>
+              Alongside my research, I develop inclusive, accessible physics curricula and active-learning environments for large introductory physics courses, especially for students in the life sciences and related fields.
+            </p>
+          </div>
+        </div>
       </div>
-      <h3>Nuclear Structure</h3>
-      <p>Study of exotic nuclei and reaction mechanisms.</p>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Research</h2>
+          <p class="lead">
+            My research program is centered on exotic nuclei, nuclear reactions, and instrumentation for experiments at modern radioactive-beam facilities.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="research-image">
+              <img src="images/accelerator.jpg" alt="Nuclear physics experimental setup">
+            </div>
+            <h3>Experimental nuclear astrophysics</h3>
+            <p>Studying nuclear reactions relevant to astrophysical environments, including processes connected to nucleosynthesis and explosive stellar scenarios.</p>
+          </div>
+          <div class="card">
+            <div class="research-image">
+              <img src="images/ATTPC.jpg" alt="Active Target Time Projection Chamber">
+            </div>
+            <h3>Active target detectors</h3>
+            <p>Developing and applying active target time projection chambers for low-energy nuclear physics and rare-isotope experiments.</p>
+          </div>
+          <div class="card">
+            <div class="research-image">
+              <img src="images/nuclear_chart.svg" alt="Nuclear structure diagram">
+            </div>
+            <h3>Nuclear structure</h3>
+            <p>Using direct reactions, breakup reactions, and solenoidal spectrometers to probe exotic nuclei and their underlying structure.</p>
+          </div>
+        </div>
+        <div class="tag-list">
+          <span class="tag">AT-TPC</span>
+          <span class="tag">R3B</span>
+          <span class="tag">SOLARIS</span>
+          <span class="tag">Exotic beams</span>
+          <span class="tag">Detector instrumentation</span>
+          <span class="tag">Nuclear technology applications</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Applications</h2>
+          <p class="lead">
+            A central part of my work connects nuclear physics methods with practical applications in environmental monitoring, imaging, and radiation protection.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="application-visual">Neutron Imaging</div>
+            <h3>Neutron imaging</h3>
+            <p>Development and application of neutron-based imaging methods for non-destructive studies, materials analysis, and nuclear technology applications.</p>
+          </div>
+          <div class="card">
+            <div class="application-visual">Radon</div>
+            <h3>Radon detection & mitigation</h3>
+            <p>Applied work on radon detection, environmental radiation monitoring, and mitigation strategies to support public health and radiation safety.</p>
+          </div>
+          <div class="card intera-card">
+            <a href="https://intera.es/" target="_blank" rel="noopener" class="intera-logo" aria-label="INTERA website">
+              <img src="intera_logo.png" alt="INTERA logo" style="max-width: 100%; max-height: 80px;">
+            </a>
+            <h3>Scientific advising</h3>
+            <p>I serve as a scientific advisor for <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a>, a company specializing in radon detection and mitigation, supporting the connection between nuclear science, environmental radiation, and real-world implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Selected projects</h2>
+          <p class="lead">
+            Current and recent projects combine experimental nuclear physics, detector development, and applied nuclear technology.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Nuclear physics and technology applications</h3>
+            <p>Environmental radiation measurements and neutron imaging. GAIN, Xunta de Galicia, 2024–2027. Principal Investigator.</p>
+          </div>
+          <div class="card">
+            <h3>Exotic nuclei with R3B and SOLARIS</h3>
+            <p>Study of exotic nuclei using R3B and SOLARIS experiments at Universidade da Coruña. Spanish State Research Agency, 2023–2027. Principal Investigator.</p>
+          </div>
+          <div class="card">
+            <h3>Active Target Time Projection Chamber</h3>
+            <p>Development of an Active Target Time Projection Chamber. National Science Foundation, USA, 2009–2012. Co-Principal Investigator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Selected publications</h2>
+          <p class="lead">
+            I have authored 79 peer-reviewed publications in journals including Physical Review Letters, Physics Letters B, Physical Review C, Nuclear Instruments and Methods A, and Progress in Particle and Nuclear Physics.
+          </p>
+        </div>
+
+        <div class="publication">
+          <div class="publication-title">Near-Threshold Dipole Strength in <sup>10</sup>Be with Isoscalar Character</div>
+          <div class="publication-meta">Physical Review Letters, 2025 · DOI: 10.1103/PhysRevLett.134.012502</div>
+        </div>
+        <div class="publication">
+          <div class="publication-title">Direct reactions with the AT-TPC</div>
+          <div class="publication-meta">Frontiers in Physics, 2025 · DOI: 10.3389/fphy.2025.1539148</div>
+        </div>
+        <div class="publication">
+          <div class="publication-title">Evolution of the nuclear spin-orbit splitting explored via the <sup>32</sup>Si(d,p)<sup>33</sup>Si reaction using SOLARIS</div>
+          <div class="publication-meta">Physics Letters B, 2024 · DOI: 10.1016/j.physletb.2024.138678</div>
+        </div>
+        <div class="publication">
+          <div class="publication-title">β+ Gamow-Teller Strengths from Unstable <sup>14</sup>O via the (d, <sup>2</sup>He) Reaction in Inverse Kinematics</div>
+          <div class="publication-meta">Physical Review Letters, 2023 · DOI: 10.1103/PhysRevLett.130.232301</div>
+        </div>
+        <div class="publication">
+          <div class="publication-title">Low energy nuclear physics with active targets and time projection chambers</div>
+          <div class="publication-meta">Progress in Particle and Nuclear Physics, 2020 · DOI: 10.1016/j.ppnp.2020.103790</div>
+        </div>
+        <div class="publication">
+          <div class="publication-title">Active targets for the study of nuclei far from stability</div>
+          <div class="publication-meta">Progress in Particle and Nuclear Physics, 2015 · DOI: 10.1016/j.ppnp.2015.06.003</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Teaching & curriculum</h2>
+          <p class="lead">
+            I design physics learning environments that combine active learning, open educational resources, accessibility, and evidence-based pedagogy.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Courses</h3>
+            <ul>
+              <li>Classical Mechanics</li>
+              <li>Quantum Physics</li>
+              <li>Electromagnetism</li>
+              <li>Introductory physics for life sciences</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>DATA Labs</h3>
+            <p>Designed the Design, Analysis, Tools, and Apprenticeship Labs for PHY251/252, supporting active learning for more than 600 students annually.</p>
+          </div>
+          <div class="card">
+            <h3>Open education</h3>
+            <p>Developed open-access learning materials, including The Mystery of the Physical World and free homework resources for introductory physics students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="group">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Research group & students</h2>
+          <p class="lead">
+            I work with students and collaborators across nuclear physics, detector instrumentation, applied nuclear techniques, and physics education.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>FiTNAE Research Group</h3>
+            <p>Founding Director of the FiTNAE Research Group at Universidade da Coruña, supporting research in nuclear physics, applied nuclear techniques, and education.</p>
+          </div>
+          <div class="card">
+            <h3>Student opportunities</h3>
+            <p>Students interested in exotic nuclei, detector development, neutron imaging, radon mitigation, or physics education are welcome to contact me about possible projects.</p>
+          </div>
+          <div class="card">
+            <h3>International collaboration</h3>
+            <p>My group connects research and training across UDC, FRIB/MSU, AIMS Senegal, and international nuclear physics collaborations including R3B and SOLARIS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mentorship">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Mentorship & service</h2>
+          <p class="lead">
+            Mentoring students, teaching assistants, and early-career researchers is central to my academic work.
+          </p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Mentorship</h3>
+            <ul>
+              <li>Supervised or mentored more than 500 undergraduate students.</li>
+              <li>Mentored more than 200 graduate teaching assistants.</li>
+              <li>Mentored more than 300 undergraduate learning assistants.</li>
+              <li>Supervision and thesis committee service at UDC and MSU.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Leadership & service</h3>
+            <ul>
+              <li>Founding Director, FiTNAE Research Group, Universidade da Coruña.</li>
+              <li>Chair, R3B High Resolution Spectrometer Working Group.</li>
+              <li>Vice-Chair, R3B Active Targets Working Group.</li>
+              <li>Member of scientific and academic committees in nuclear physics and higher education.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Awards & honors</h2>
+          <p class="lead">Recognition for teaching, open education, accessibility, STEM pedagogy, and academic excellence.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020</div>
+            <div>
+              <div class="timeline-title">MSU OER Leadership Award · Norman L. & Olga K. Fritz Teaching Excellence Award · HUB Catalyst Award</div>
+              <div class="timeline-text">Recognition for open education, teaching excellence, and educational innovation.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019</div>
+            <div>
+              <div class="timeline-title">Teaching Accessibility Fellowship · Adams Academy Fellow</div>
+              <div class="timeline-text">Support for accessible, inclusive, and innovative teaching practices.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017–2016</div>
+            <div>
+              <div class="timeline-title">HHMI STEM Gateway Fellow · Thomas H. Osgood Teaching Excellence Award</div>
+              <div class="timeline-text">Recognition for STEM education and undergraduate teaching excellence.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2006</div>
+            <div>
+              <div class="timeline-title">Extraordinary Undergraduate Award, Xunta de Galicia</div>
+              <div class="timeline-text">Award for academic excellence in undergraduate physics studies.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              I welcome inquiries about nuclear physics collaborations, detector instrumentation, student supervision, physics education, and invited lectures.
+            </p>
+          </div>
+          <div>
+            <p><strong>Email:</strong> <a href="mailto:saul.beceiro@udc.es">saul.beceiro@udc.es</a></p>
+            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">0000-0003-2295-473X</a></p>
+            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Profile</a></p>
+            <p><strong>Affiliations:</strong> UDC · FRIB · MSU · AIMS Senegal</p>
+            <div class="actions">
+              <a class="button" href="mailto:saul.beceiro@udc.es">Email me</a>
+              <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Saúl Beceiro Novo. Built for GitHub Pages.
     </div>
+  </footer>
 
-  </div>
-</div>
-
-<div class="container">
-  <h2>Applications</h2>
-
-  <div class="grid-3">
-
-    <div class="card">
-      <h3>Neutron Imaging</h3>
-      <p>Applied nuclear techniques for neutron imaging, non-destructive studies, and nuclear technology applications.</p>
-    </div>
-
-    <div class="card">
-      <h3>Radon Detection & Mitigation</h3>
-      <p>Environmental radiation monitoring and radon mitigation strategies supporting radiation safety and public health.</p>
-    </div>
-
-    <div class="card">
-      <h3>INTERA</h3>
-      <p>I serve as a scientific advisor for INTERA, a company specializing in radon detection and mitigation.</p>
-    </div>
-
-  </div>
-</div>
-
-<div class="container">
-  <h2>Research Group</h2>
-
-  <div class="grid-3">
-
-    <div class="card">
-      <h3>FiTNAE</h3>
-      <p>Research group at Universidade da Coruña focusing on nuclear physics and applications.</p>
-    </div>
-
-    <div class="card">
-      <h3>Students</h3>
-      <p>Opportunities for undergraduate and graduate students in nuclear physics, detector instrumentation, and applications.</p>
-    </div>
-
-    <div class="card">
-      <h3>Collaborations</h3>
-      <p>Work across UDC, CITENI, FRIB, MSU, AIMS Senegal, and international collaborations.</p>
-    </div>
-
-  </div>
-</div>
-
-<div class="container">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:saul.beceiro@udc.es">saul.beceiro@udc.es</a></p>
-</div>
-
-<footer>
-  © 2026 Saúl Beceiro Novo
-</footer>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
