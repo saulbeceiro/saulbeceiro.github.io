@@ -193,6 +193,29 @@
   display: inline-flex;
   text-decoration: none;
 }
+    .collab-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.collab-logos img {
+  width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.collab-logos img:hover {
+  transform: scale(1.05);
+}
     .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
