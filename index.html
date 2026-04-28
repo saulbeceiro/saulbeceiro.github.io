@@ -193,6 +193,41 @@
   display: inline-flex;
   text-decoration: none;
 }
+    .book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.book-grid a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+.book-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-grid a:hover img {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.book-grid span {
+  display: block;
+  margin-top: 6px;
+}
 
     .actions {
       display: flex;
@@ -834,9 +869,30 @@
             <p>Designed the Design, Analysis, Tools, and Apprenticeship Labs for PHY251/252, supporting active learning for more than 600 students annually.</p>
           </div>
           <div class="card">
-            <h3>Open education</h3>
-            <p>Developed open-access learning materials, including The Mystery of the Physical World and free homework resources for introductory physics students.</p>
-          </div>
+  <h3>Open education & textbooks</h3>
+  <p>
+    I actively develop and contribute to open educational resources (OER) in physics, focusing on accessible, high-quality materials for students in the life sciences.
+  </p>
+
+  <div class="book-grid">
+    
+    <a href="https://openbooks.lib.msu.edu/collegephysics1/" target="_blank">
+      <img src="images/physics1.png" alt="Introductory Physics for the Health and Life Sciences I">
+      <span>Physics I (Health & Life Sciences)</span>
+    </a>
+
+    <a href="https://openbooks.lib.msu.edu/collegephysics2/" target="_blank">
+      <img src="images/physics2.jpg" alt="Introductory Physics for the Health and Life Sciences II">
+      <span>Physics II (Health & Life Sciences)</span>
+    </a>
+
+    <a href="https://openbooks.lib.msu.edu/isp201/" target="_blank">
+      <img src="images/isp201.png" alt="Introductory Physics for Curious Minds">
+      <span>Physics for Curious Minds</span>
+    </a>
+
+  </div>
+</div>
         </div>
       </div>
     </section>
