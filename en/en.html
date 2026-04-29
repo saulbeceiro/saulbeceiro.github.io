@@ -6,16 +6,19 @@
   <meta name="description" content="Professional website of Saúl Beceiro Novo, Ramón y Cajal Researcher at Universidade da Coruña, Adjunct Assistant Professor at FRIB and Michigan State University, and Guest Lecturer at AIMS Senegal." />
   <title>Saúl Beceiro Novo | Nuclear Physics & Physics Education</title>
   <style>
-    :root {
-      --bg: #f8faf9;
-      --card: #ffffff;
-      --text: #17211d;
-      --muted: #5f6f68;
-      --accent: #0b5d4f;
-      --accent-light: #e4f3ef;x
-      --line: #d9e4df;
-      --shadow: 0 18px 45px rgba(15, 40, 30, 0.08);
-    }
+:root {
+  --bg: #f8faf9;
+  --card: #ffffff;
+  --text: #17211d;
+  --muted: #5f6f68;
+
+  --accent: #e6007e;
+  --accent-dark: #b30063;
+  --accent-light: #fde6f3;
+
+  --line: #d9e4df;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
 
     * {
       box-sizing: border-box;
@@ -41,7 +44,18 @@
 
     a:hover {
       text-decoration: underline;
+      color: var(--accent-dark);
     }
+    .icon-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-button img {
+  height: 18px;
+  width: auto;
+}
 
     .container {
       width: min(1120px, calc(100% - 40px));
@@ -223,28 +237,28 @@
   margin-top: 12px;
 }
 
-.book-grid a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 600;
-  display: block;
-  text-align: center;
-}
-
 .book-grid img {
-  width: 100%;
-  height: 220px;
+  width: 145px;
+  height: 215px;
   object-fit: cover;
-  border-radius: 12px;
+  object-position: center top;
+  border-radius: 8px 14px 14px 8px;
   border: 1px solid var(--line);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow:
+    8px 10px 18px rgba(0,0,0,0.18),
+    inset 8px 0 0 rgba(255,255,255,0.28);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+    .book-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .book-grid a:hover img {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 12px 14px 24px rgba(0,0,0,0.22);
 }
 
 .book-grid span {
@@ -281,11 +295,13 @@
       font-weight: 800;
       border: 1px solid var(--accent);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
+       background: var(--accent);
     }
 
     .button:hover {
       transform: translateY(-1px);
       text-decoration: none;
+       background: var(--accent-dark);
     }
 
     .button.primary {
@@ -409,6 +425,15 @@
     .card p, .card li {
       color: var(--muted);
     }
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 14px;
+  margin: 10px 0 14px;
+  background: #000; /* optional: gives clean frame if aspect ratio differs */
+}
 
     ul {
       list-style-position: outside;
@@ -559,6 +584,28 @@
     .timeline-text {
       color: var(--muted);
     }
+    .footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 18px;
+}
+
+.footer-logos a {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.footer-logos img {
+  height: 38px;
+  max-width: 150px;
+  object-fit: contain;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
 
     .contact-box {
       background: var(--accent);
@@ -635,7 +682,7 @@
           <!-- Language switch -->
   <span class="lang-switch">
     <a href="index.html">ES</a> |
-    <a href="en.html">EN</a>
+    <a href="en/en.html">EN</a>
   </span>
       </div>
     </nav>
@@ -689,12 +736,16 @@
             <a class="button primary" href="BeceiroNovo_CV2025_EN.pdf" download>
               <span aria-hidden="true">⬇</span> Download CV
             </a>
-            <a class="button secondary" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">
-              <span aria-hidden="true">🎓</span> Google Scholar
-            </a>
-            <a class="button secondary" href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">
-              <span aria-hidden="true">ⓘD</span> ORCID
-            </a>
+              <a class="button icon-button" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank">
+    <img src="google-scholar.png" alt="Google Scholar">
+    Google Scholar
+  </a>
+
+  <a class="button icon-button" href="https://orcid.org/0000-0003-2295-473X" target="_blank">
+    <img src="orcid-logo.jpeg" alt="ORCID">
+    ORCID
+  </a>
+
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile highlights">
@@ -896,7 +947,7 @@
             I design physics learning environments that combine active learning, open educational resources, accessibility, and evidence-based pedagogy.
           </p>
         </div>
-        <div class="grid-3">
+        <div class="grid-2">
           <div class="card">
             <h3>Courses</h3>
             <ul>
@@ -904,11 +955,12 @@
               <li>Quantum Physics</li>
               <li>Electromagnetism</li>
               <li>Introductory physics for life sciences</li>
+               <li>Nanotechnologies for the Energy Transition</li>
+               <li>Physics for non-science majors</li>
+              <li>DATA Labs — Design, Analysis, Tools, and Apprenticeship Labs for PHY251/252, supporting active learning for more than 600 students annually</li>
+               <li><a href="studio-physics.html">Studio Physics →</a> (inquiry based active learning)</li>
             </ul>
-          </div>
-          <div class="card">
-            <h3>DATA Labs</h3>
-            <p>Designed the Design, Analysis, Tools, and Apprenticeship Labs for PHY251/252, supporting active learning for more than 600 students annually.</p>
+             <img src="studio1.jpg" alt="Studio Physics classroom" class="card-image">
           </div>
           <div class="card">
   <h3>Open education & textbooks</h3>
@@ -948,10 +1000,41 @@
           </p>
         </div>
         <div class="grid-3">
-          <div class="card">
-            <h3>FiTNAE Research Group</h3>
-            <p>Founding Director of the FiTNAE Research Group at Universidade da Coruña, supporting research in nuclear physics, applied nuclear techniques, and education.</p>
-          </div>
+<div class="card">
+  <h3>FiTNAE Research Group</h3>
+
+  <p>
+    I am part of the Nuclear and High Energy Physics and Technology (FiTNAE) research group at Universidade da Coruña, based at CITENI in Ferrol.
+  </p>
+
+  <p>
+    The group focuses on experimental nuclear physics, particle physics, and technological applications, including the study of nuclear reactions with exotic beams, detector development, and applied nuclear techniques.
+  </p>
+
+  <p>
+    Research activities span:
+  </p>
+
+  <ul>
+    <li>Experimental nuclear physics and nuclear structure</li>
+    <li>Reactions with exotic beams and active target detectors</li>
+    <li>Radiation detector development (gas and solid-state detectors)</li>
+    <li>Neutron imaging and environmental radiation measurements</li>
+    <li>Radon detection and radiation protection applications</li>
+    <li>High-energy and particle physics (including LHCb-related work)</li>
+  </ul>
+
+  <p>
+    The group combines fundamental research with industrial and societal applications, particularly in radiation measurement, environmental monitoring, and nuclear technology.
+  </p>
+
+  <p>
+    <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank">
+      View official FiTNAE page →
+    </a>
+  </p>
+
+</div>
 <div class="card">
   <h3>Current students</h3>
 
@@ -1099,6 +1182,20 @@
             <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">0000-0003-2295-473X</a></p>
             <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Profile</a></p>
             <p><strong>Affiliations:</strong> CITENI · Campus Industrial · UDC · FRIB · MSU · AIMS Senegal</p>
+            <div class="footer-logos" aria-label="Affiliation logos">
+  <a href="https://www.udc.es/es/online/" target="_blank" rel="noopener">
+    <img src="udc.png" alt="Universidade da Coruña logo">
+  </a>
+  <a href="https://citeni.udc.es/en/" target="_blank" rel="noopener">
+    <img src="citeni.png" alt="CITENI logo">
+  </a>
+  <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
+    <img src="fitnae.png" alt="FiTNAE Research Group logo">
+  </a>
+  <a href="https://campusindustrial.udc.es/en/" target="_blank" rel="noopener">
+    <img src="campusindustrial.png" alt="Campus Industrial logo">
+  </a>
+</div>
             <div class="actions">
               <a class="button" href="mailto:saul.beceiro@udc.es">Email me</a>
               <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Download CV</a>
