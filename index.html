@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional website of Saúl Beceiro Novo, Ramón y Cajal Researcher at Universidade da Coruña, Adjunct Assistant Professor at FRIB and Michigan State University, and Guest Lecturer at AIMS Senegal." />
-  <title>Saúl Beceiro Novo | Nuclear Physics & Physics Education</title>
+  <meta name="description" content="Página profesional de Saúl Beceiro Novo, investigador Ramón y Cajal en la Universidade da Coruña, Adjunct Assistant Professor en FRIB y Michigan State University, y profesor invitado en AIMS Senegal." />
+  <title>Saúl Beceiro Novo | Física Nuclear y Educación en Física</title>
   <style>
 :root {
   --bg: #f8faf9;
@@ -46,16 +46,17 @@
       text-decoration: underline;
       color: var(--accent-dark);
     }
-    .icon-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
 
-.icon-button img {
-  height: 18px;
-  width: auto;
-}
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-button img {
+      height: 18px;
+      width: auto;
+    }
 
     .container {
       width: min(1120px, calc(100% - 40px));
@@ -108,7 +109,7 @@
     .hero {
       padding: 90px 0 64px;
       background:
-        radial-gradient(circle at top right, rgba(11, 93, 79, 0.12), transparent 35%),
+        radial-gradient(circle at top right, rgba(230, 0, 126, 0.12), transparent 35%),
         linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
     }
 
@@ -203,81 +204,85 @@
       transform: translateY(-2px);
       box-shadow: 0 10px 24px rgba(15, 40, 30, 0.08);
     }
+
     .affiliation-logos a {
-  display: inline-flex;
-  text-decoration: none;
-}
+      display: inline-flex;
+      text-decoration: none;
+    }
+
     .collab-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 14px;
-  align-items: center;
-  margin-top: 12px;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      align-items: center;
+      margin-top: 12px;
+    }
 
-.collab-logos img {
-  width: 100%;
-  max-height: 70px;
-  object-fit: contain;
-  background: white;
-  padding: 8px;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
+    .collab-logos img {
+      width: 100%;
+      max-height: 70px;
+      object-fit: contain;
+      background: white;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
 
-.collab-logos img:hover {
-  transform: scale(1.05);
-}
+    .collab-logos img:hover {
+      transform: scale(1.05);
+    }
+
     .book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-  margin-top: 12px;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
 
-.book-grid img {
-  width: 145px;
-  height: 215px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 8px 14px 14px 8px;
-  border: 1px solid var(--line);
-  box-shadow:
-    8px 10px 18px rgba(0,0,0,0.18),
-    inset 8px 0 0 rgba(255,255,255,0.28);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    .book-grid img {
+      width: 145px;
+      height: 215px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px 14px 14px 8px;
+      border: 1px solid var(--line);
+      box-shadow:
+        8px 10px 18px rgba(0,0,0,0.18),
+        inset 8px 0 0 rgba(255,255,255,0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
     .book-grid a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.book-grid a:hover img {
-  transform: translateY(-4px) rotate(-1deg);
-  box-shadow: 12px 14px 24px rgba(0,0,0,0.22);
-}
+    .book-grid a:hover img {
+      transform: translateY(-4px) rotate(-1deg);
+      box-shadow: 12px 14px 24px rgba(0,0,0,0.22);
+    }
 
-.book-grid span {
-  display: block;
-  margin-top: 6px;
-}
+    .book-grid span {
+      display: block;
+      margin-top: 6px;
+    }
+
     .lang-switch {
-  margin-left: 20px;
-  font-weight: 600;
-}
+      margin-left: 20px;
+      font-weight: 600;
+    }
 
-.lang-switch a {
-  color: var(--muted);
-  text-decoration: none;
-}
+    .lang-switch a {
+      color: var(--muted);
+      text-decoration: none;
+    }
 
-.lang-switch a:hover {
-  color: var(--accent);
-}
+    .lang-switch a:hover {
+      color: var(--accent);
+    }
 
     .actions {
       display: flex;
@@ -295,19 +300,19 @@
       font-weight: 800;
       border: 1px solid var(--accent);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
-       background: var(--accent);
+      background: var(--accent);
     }
 
     .button:hover {
       transform: translateY(-1px);
       text-decoration: none;
-       background: var(--accent-dark);
+      background: var(--accent-dark);
     }
 
     .button.primary {
       background: var(--accent);
       color: white;
-      box-shadow: 0 10px 24px rgba(11, 93, 79, 0.22);
+      box-shadow: 0 10px 24px rgba(230, 0, 126, 0.22);
     }
 
     .button.secondary {
@@ -425,15 +430,16 @@
     .card p, .card li {
       color: var(--muted);
     }
-.card-image {
-  width: 100%;
-  height: auto;
-  max-height: 260px;
-  object-fit: contain;
-  border-radius: 14px;
-  margin: 10px 0 14px;
-  background: #000; /* optional: gives clean frame if aspect ratio differs */
-}
+
+    .card-image {
+      width: 100%;
+      height: auto;
+      max-height: 260px;
+      object-fit: contain;
+      border-radius: 14px;
+      margin: 10px 0 14px;
+      background: #000;
+    }
 
     ul {
       list-style-position: outside;
@@ -481,7 +487,7 @@
       width: 100%;
       height: 190px;
       border-radius: 20px;
-      background: linear-gradient(135deg, var(--accent), #1d8f77);
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
       color: white;
       display: flex;
       align-items: center;
@@ -533,7 +539,7 @@
     }
 
     .intera-card {
-      border-color: rgba(11, 93, 79, 0.28);
+      border-color: rgba(230, 0, 126, 0.28);
     }
 
     .publication {
@@ -584,28 +590,29 @@
     .timeline-text {
       color: var(--muted);
     }
+
     .footer-logos {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 14px 0 18px;
-}
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 14px 0 18px;
+    }
 
-.footer-logos a {
-  display: inline-flex;
-  text-decoration: none;
-}
+    .footer-logos a {
+      display: inline-flex;
+      text-decoration: none;
+    }
 
-.footer-logos img {
-  height: 38px;
-  max-width: 150px;
-  object-fit: contain;
-  background: white;
-  padding: 6px 10px;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-}
+    .footer-logos img {
+      height: 38px;
+      max-width: 150px;
+      object-fit: contain;
+      background: white;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
 
     .contact-box {
       background: var(--accent);
@@ -670,102 +677,100 @@
   <header>
     <nav class="container">
       <a class="brand" href="#top">Saúl Beceiro Novo</a>
-      <div class="nav-links" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#applications">Applications</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#group">Group</a>
-        <a href="#mentorship">Mentorship</a>
-        <a href="#contact">Contact</a>
-          <!-- Language switch -->
-  <span class="lang-switch">
-    <a href="index.html">ES</a> |
-    <a href="en/en.html">EN</a>
-  </span>
+      <div class="nav-links" aria-label="Navegación principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#research">Investigación</a>
+        <a href="#applications">Aplicaciones</a>
+        <a href="#publications">Publicaciones</a>
+        <a href="#teaching">Docencia</a>
+        <a href="#group">Grupo</a>
+        <a href="#mentorship">Mentoría</a>
+        <a href="#contact">Contacto</a>
+        <span class="lang-switch">
+          ES | <a href="index.html">EN</a>
+        </span>
       </div>
     </nav>
-
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Experimental Nuclear Physics · Detector Instrumentation · Physics Education</div>
+          <div class="eyebrow">Física Nuclear Experimental · Instrumentación de Detectores · Educación en Física</div>
           <h1>Saúl Beceiro Novo, Ph.D.</h1>
           <p class="hero-subtitle">
-            I am an experimental nuclear physicist working at the intersection of exotic nuclear systems, detector instrumentation, and real-world applications such as neutron imaging and radon detection and mitigation.
+            Soy físico nuclear experimental y trabajo en la intersección entre sistemas nucleares exóticos, instrumentación de detectores y aplicaciones reales como la imagen por neutrones y la detección y mitigación de radón.
           </p>
           <div class="affiliations">
-            <span>Ramón y Cajal Researcher · CITENI · Campus Industrial · Universidade da Coruña</span>
-            <span>Adjunct Assistant Professor · FRIB & Michigan State University</span>
-            <span>Guest Lecturer · AIMS Senegal</span>
+            <span>Investigador Ramón y Cajal · CITENI · Campus Industrial · Universidade da Coruña</span>
+            <span>Adjunct Assistant Professor · FRIB y Michigan State University</span>
+            <span>Profesor Invitado · AIMS Senegal</span>
           </div>
-<div class="affiliation-logos" aria-label="Institutional affiliations">
-    <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
-    <img src="fitnae.png" alt="FiTNAE Research Group logo">
-  </a>
-  <a href="https://citeni.udc.es/en/" target="_blank" rel="noopener">
-    <img src="citeni.png" alt="CITENI logo">
-  </a>
-  <a href="https://campusindustrial.udc.es/en/" target="_blank" rel="noopener">
-    <img src="campusindustrial.png" alt="Campus Industrial logo">
-  </a>
-    <a href="https://www.udc.es/es/online/" target="_blank" rel="noopener">
-    <img src="udc.png" alt="Universidade da Coruña logo">
-  </a>
-    <a href="https://pa.msu.edu/" target="_blank" rel="noopener">
-    <img src="msu_logo.png" alt="MSU logo">
-  </a>
-  <a href="https://frib.msu.edu/" target="_blank" rel="noopener">
-    <img src="frib_logo.jpeg" alt="FRIB logo">
-  </a>
-  <a href="https://aims-senegal.org/structured-masters-program/" target="_blank" rel="noopener">
-    <img src="aims_senegal.jpg" alt="AIMS logo">
-  </a>
-</div>
 
-          <div class="hero-kicker-row" aria-label="Research highlights">
-            <div class="hero-kicker"><strong>Exotic nuclei</strong>R3B · SOLARIS · active targets</div>
-            <div class="hero-kicker"><strong>Applications</strong>Neutron imaging · radon mitigation</div>
-            <div class="hero-kicker"><strong>Education</strong>OER · accessibility · active learning</div>
+          <div class="affiliation-logos" aria-label="Afiliaciones institucionales">
+            <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
+              <img src="fitnae.png" alt="Logo del grupo FiTNAE">
+            </a>
+            <a href="https://citeni.udc.es/en/" target="_blank" rel="noopener">
+              <img src="citeni.png" alt="Logo de CITENI">
+            </a>
+            <a href="https://campusindustrial.udc.es/en/" target="_blank" rel="noopener">
+              <img src="campusindustrial.png" alt="Logo de Campus Industrial">
+            </a>
+            <a href="https://www.udc.es/es/online/" target="_blank" rel="noopener">
+              <img src="udc.png" alt="Logo de la Universidade da Coruña">
+            </a>
+            <a href="https://pa.msu.edu/" target="_blank" rel="noopener">
+              <img src="msu_logo.png" alt="Logo de MSU">
+            </a>
+            <a href="https://frib.msu.edu/" target="_blank" rel="noopener">
+              <img src="frib_logo.jpeg" alt="Logo de FRIB">
+            </a>
+            <a href="https://aims-senegal.org/structured-masters-program/" target="_blank" rel="noopener">
+              <img src="aims_senegal.jpg" alt="Logo de AIMS Senegal">
+            </a>
           </div>
+
+          <div class="hero-kicker-row" aria-label="Áreas destacadas">
+            <div class="hero-kicker"><strong>Núcleos exóticos</strong>R3B · SOLARIS · detectores activos</div>
+            <div class="hero-kicker"><strong>Aplicaciones</strong>Imagen por neutrones · mitigación de radón</div>
+            <div class="hero-kicker"><strong>Educación</strong>OER · accesibilidad · aprendizaje activo</div>
+          </div>
+
           <div class="actions">
             <a class="button primary" href="BeceiroNovo_CV2025_EN.pdf" download>
-              <span aria-hidden="true">⬇</span> Download CV
+              <span aria-hidden="true">⬇</span> Descargar CV
             </a>
-              <a class="button icon-button" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank">
-    <img src="google-scholar.png" alt="Google Scholar">
-    Google Scholar
-  </a>
-
-  <a class="button icon-button" href="https://orcid.org/0000-0003-2295-473X" target="_blank">
-    <img src="orcid-logo.jpeg" alt="ORCID">
-    ORCID
-  </a>
-
+            <a class="button icon-button" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">
+              <img src="google-scholar.png" alt="Google Scholar">
+              Google Scholar
+            </a>
+            <a class="button icon-button" href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">
+              <img src="orcid-logo.jpeg" alt="ORCID">
+              ORCID
+            </a>
           </div>
         </div>
-        <aside class="profile-card" aria-label="Profile highlights">
+
+        <aside class="profile-card" aria-label="Indicadores del perfil">
           <img src="profilePIC.png" alt="Saúl Beceiro Novo" class="profile-photo">
           <div class="metric-list">
             <div class="metric">
               <strong>79</strong>
-              peer-reviewed publications
+              publicaciones revisadas por pares
             </div>
             <div class="metric">
               <strong>~1177</strong>
-              citations, Scopus February 2026
+              citas, Scopus febrero 2026
             </div>
             <div class="metric">
               <strong>17</strong>
-              h-index, Scopus
+              índice h, Scopus
             </div>
             <div class="metric">
               <strong>€2M+</strong>
-              PI or Co-PI funding portfolio
+              financiación como IP o Co-IP
             </div>
           </div>
         </aside>
@@ -775,29 +780,29 @@
     <section id="about">
       <div class="container">
         <div class="section-heading">
-          <h2>About</h2>
+          <h2>Sobre mí</h2>
           <p class="lead">
-            My work connects frontier nuclear physics research with international collaboration, detector development, and evidence-based physics education.
+            Mi trabajo conecta investigación de frontera en física nuclear con colaboración internacional, desarrollo de detectores y educación en física basada en evidencia.
           </p>
         </div>
         <div class="grid-2">
           <div class="card">
-            <h3>Scientific profile</h3>
-            <p><strong>Scientific Advisor:</strong> <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a></p>
+            <h3>Perfil científico</h3>
+            <p><strong>Asesor científico:</strong> <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a></p>
             <p>
-              I specialize in experimental nuclear physics, with a focus on active target detectors, reactions with exotic beams, and applied nuclear techniques. My research spans experimental nuclear astrophysics, nuclear structure, detector instrumentation, neutron imaging, environmental radiation measurements, and radon detection and mitigation.
+              Me especializo en física nuclear experimental, con enfoque en detectores de blanco activo, reacciones con haces exóticos y técnicas nucleares aplicadas. Mi investigación abarca astrofísica nuclear experimental, estructura nuclear, instrumentación de detectores, imagen por neutrones, medidas de radiación ambiental y detección y mitigación de radón.
             </p>
           </div>
-<div class="card">
-  <h3>Educational profile</h3>
-  <p>
-    Alongside my research, I develop inclusive, accessible physics curricula and active-learning environments for large introductory physics courses, especially for students in the life sciences and related fields.
-  </p>
 
-  <p>
-    In addition to my regular teaching at Universidade da Coruña, I collaborate in teaching activities at Michigan State University and contribute to the AIMS Senegal Structured Master Program in Mathematical Sciences, supporting international graduate education in physics and related disciplines.
-  </p>
-</div>
+          <div class="card">
+            <h3>Perfil educativo</h3>
+            <p>
+              Además de mi investigación, desarrollo currículos de física inclusivos y accesibles, así como entornos de aprendizaje activo para cursos introductorios de gran escala, especialmente dirigidos a estudiantes de ciencias de la vida.
+            </p>
+            <p>
+              Además de mi docencia habitual en la Universidade da Coruña, colaboro en actividades docentes en Michigan State University y participo en el Structured Master Program in Mathematical Sciences de AIMS Senegal, apoyando la formación internacional de posgrado en física y disciplinas afines.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -805,41 +810,41 @@
     <section id="research">
       <div class="container">
         <div class="section-heading">
-          <h2>Research</h2>
+          <h2>Investigación</h2>
           <p class="lead">
-            My research program is centered on exotic nuclei, nuclear reactions, and instrumentation for experiments at modern radioactive-beam facilities.
+            Mi programa de investigación se centra en núcleos exóticos, reacciones nucleares e instrumentación para experimentos en instalaciones modernas de haces radiactivos.
           </p>
         </div>
         <div class="grid-3">
           <div class="card">
             <div class="research-image">
-              <img src="accelerator.jpg" alt="Nuclear physics experimental setup">
+              <img src="accelerator.jpg" alt="Montaje experimental de física nuclear">
             </div>
-            <h3>Experimental nuclear astrophysics</h3>
-            <p>Studying nuclear reactions relevant to astrophysical environments, including processes connected to nucleosynthesis and explosive stellar scenarios.</p>
+            <h3>Astrofísica nuclear experimental</h3>
+            <p>Estudio de reacciones nucleares relevantes para entornos astrofísicos, incluyendo procesos relacionados con la nucleosíntesis y escenarios estelares explosivos.</p>
           </div>
           <div class="card">
             <div class="research-image">
               <img src="ATTPC.jpg" alt="Active Target Time Projection Chamber">
             </div>
-            <h3>Active target detectors</h3>
-            <p>Developing and applying active target time projection chambers for low-energy nuclear physics and rare-isotope experiments.</p>
+            <h3>Detectores de blanco activo</h3>
+            <p>Desarrollo y aplicación de cámaras de proyección temporal de blanco activo para física nuclear de baja energía y experimentos con isótopos exóticos.</p>
           </div>
           <div class="card">
             <div class="research-image">
-              <img src="Nuclear_chart.svg" alt="Nuclear structure diagram">
+              <img src="Nuclear_chart.svg" alt="Diagrama de estructura nuclear">
             </div>
-            <h3>Nuclear structure</h3>
-            <p>Using direct reactions, breakup reactions, and solenoidal spectrometers to probe exotic nuclei and their underlying structure.</p>
+            <h3>Estructura nuclear</h3>
+            <p>Uso de reacciones directas, reacciones de ruptura y espectrómetros solenoidales para estudiar núcleos exóticos y su estructura interna.</p>
           </div>
         </div>
         <div class="tag-list">
           <span class="tag">AT-TPC</span>
           <span class="tag">R3B</span>
           <span class="tag">SOLARIS</span>
-          <span class="tag">Exotic beams</span>
-          <span class="tag">Detector instrumentation</span>
-          <span class="tag">Nuclear technology applications</span>
+          <span class="tag">Haces exóticos</span>
+          <span class="tag">Instrumentación de detectores</span>
+          <span class="tag">Aplicaciones de tecnología nuclear</span>
         </div>
       </div>
     </section>
@@ -847,32 +852,32 @@
     <section id="applications">
       <div class="container">
         <div class="section-heading">
-          <h2>Applications</h2>
+          <h2>Aplicaciones</h2>
           <p class="lead">
-            A central part of my work connects nuclear physics methods with practical applications in environmental monitoring, imaging, and radiation protection.
+            Una parte central de mi trabajo conecta métodos de la física nuclear con aplicaciones prácticas en monitorización ambiental, imagen y protección radiológica.
           </p>
         </div>
         <div class="grid-3">
           <div class="card">
             <div class="application-visual">
-  <img src="neutron-imaging.jpg" alt="Neutron imaging example">
-</div>
-            <h3>Neutron imaging</h3>
-            <p>Development and application of neutron-based imaging methods for non-destructive studies, materials analysis, and nuclear technology applications.</p>
+              <img src="neutron-imaging.jpg" alt="Ejemplo de imagen por neutrones">
+            </div>
+            <h3>Imagen por neutrones</h3>
+            <p>Desarrollo y aplicación de métodos de imagen basados en neutrones para estudios no destructivos, análisis de materiales y aplicaciones tecnológicas nucleares.</p>
           </div>
           <div class="card">
             <div class="application-visual">
-  <img src="radon.jpg" alt="Radon detection instruments">
-</div>
-            <h3>Radon detection & mitigation</h3>
-            <p>Applied work on radon detection, environmental radiation monitoring, and mitigation strategies to support public health and radiation safety.</p>
+              <img src="radon.jpg" alt="Instrumentos de detección de radón">
+            </div>
+            <h3>Detección y mitigación de radón</h3>
+            <p>Trabajo aplicado en detección de radón, monitorización de radiación ambiental y estrategias de mitigación para apoyar la salud pública y la seguridad radiológica.</p>
           </div>
           <div class="card intera-card">
-            <a href="https://intera.es/" target="_blank" rel="noopener" class="intera-logo" aria-label="INTERA website">
-              <img src="intera_logo.png" alt="INTERA logo" style="max-width: 100%; max-height: 80px;">
+            <a href="https://intera.es/" target="_blank" rel="noopener" class="intera-logo" aria-label="Sitio web de INTERA">
+              <img src="intera_logo.png" alt="Logo de INTERA" style="max-width: 100%; max-height: 80px;">
             </a>
-            <h3>Scientific advising</h3>
-            <p>I serve as a scientific advisor for <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a>, a company specializing in radon detection and mitigation, supporting the connection between nuclear science, environmental radiation, and real-world implementation.</p>
+            <h3>Asesoramiento científico</h3>
+            <p>Actúo como asesor científico de <a href="https://intera.es/" target="_blank" rel="noopener">INTERA</a>, una empresa especializada en detección y mitigación de radón, apoyando la conexión entre ciencia nuclear, radiación ambiental y aplicaciones reales.</p>
           </div>
         </div>
       </div>
@@ -881,23 +886,23 @@
     <section id="projects">
       <div class="container">
         <div class="section-heading">
-          <h2>Selected projects</h2>
+          <h2>Proyectos seleccionados</h2>
           <p class="lead">
-            Current and recent projects combine experimental nuclear physics, detector development, and applied nuclear technology.
+            Mis proyectos actuales y recientes combinan física nuclear experimental, desarrollo de detectores y tecnología nuclear aplicada.
           </p>
         </div>
         <div class="grid-3">
           <div class="card">
-            <h3>Nuclear physics and technology applications</h3>
-            <p>Environmental radiation measurements and neutron imaging. GAIN, Xunta de Galicia, 2024–2027. Principal Investigator.</p>
+            <h3>Aplicaciones de física y tecnología nuclear</h3>
+            <p>Medidas de radiación ambiental e imagen por neutrones. GAIN, Xunta de Galicia, 2024–2027. Investigador Principal.</p>
           </div>
           <div class="card">
-            <h3>Exotic nuclei with R3B and SOLARIS</h3>
-            <p>Study of exotic nuclei using R3B and SOLARIS experiments at Universidade da Coruña. Spanish State Research Agency, 2023–2027. Principal Investigator.</p>
+            <h3>Núcleos exóticos con R3B y SOLARIS</h3>
+            <p>Estudio de núcleos exóticos usando experimentos R3B y SOLARIS en la Universidade da Coruña. Agencia Estatal de Investigación, 2023–2027. Investigador Principal.</p>
           </div>
           <div class="card">
             <h3>Active Target Time Projection Chamber</h3>
-            <p>Development of an Active Target Time Projection Chamber. National Science Foundation, USA, 2009–2012. Co-Principal Investigator.</p>
+            <p>Desarrollo de una cámara de proyección temporal de blanco activo. National Science Foundation, EE. UU., 2009–2012. Co-Investigador Principal.</p>
           </div>
         </div>
       </div>
@@ -906,9 +911,9 @@
     <section id="publications">
       <div class="container">
         <div class="section-heading">
-          <h2>Selected publications</h2>
+          <h2>Publicaciones seleccionadas</h2>
           <p class="lead">
-            I have authored 79 peer-reviewed publications in journals including Physical Review Letters, Physics Letters B, Physical Review C, Nuclear Instruments and Methods A, and Progress in Particle and Nuclear Physics.
+            He publicado 79 artículos revisados por pares en revistas como Physical Review Letters, Physics Letters B, Physical Review C, Nuclear Instruments and Methods A y Progress in Particle and Nuclear Physics.
           </p>
         </div>
 
@@ -942,51 +947,50 @@
     <section id="teaching">
       <div class="container">
         <div class="section-heading">
-          <h2>Teaching & curriculum</h2>
+          <h2>Docencia y desarrollo curricular</h2>
           <p class="lead">
-            I design physics learning environments that combine active learning, open educational resources, accessibility, and evidence-based pedagogy.
+            Diseño entornos de aprendizaje en física que combinan aprendizaje activo, recursos educativos abiertos, accesibilidad y pedagogía basada en evidencia.
           </p>
         </div>
         <div class="grid-2">
           <div class="card">
-            <h3>Courses</h3>
+            <h3>Cursos</h3>
             <ul>
-              <li>Classical Mechanics</li>
-              <li>Quantum Physics</li>
-              <li>Electromagnetism</li>
-              <li>Introductory physics for life sciences</li>
-               <li>Nanotechnologies for the Energy Transition</li>
-               <li>Physics for non-science majors</li>
-              <li>DATA Labs — Design, Analysis, Tools, and Apprenticeship Labs for PHY251/252, supporting active learning for more than 600 students annually</li>
-               <li><a href="studio-physics.html">Studio Physics →</a> (inquiry based active learning)</li>
+              <li>Mecánica clásica</li>
+              <li>Física cuántica</li>
+              <li>Electromagnetismo</li>
+              <li>Física introductoria para ciencias de la vida</li>
+              <li>Nanotecnologías para la transición energética</li>
+              <li>Física para estudiantes no científicos</li>
+              <li>DATA Labs — Laboratorios de Diseño, Análisis, Herramientas y Aprendizaje para PHY251/252, apoyando el aprendizaje activo de más de 600 estudiantes al año</li>
+              <li><a href="studio-physics.html">Studio Physics →</a> (aprendizaje activo basado en indagación)</li>
             </ul>
-             <img src="studio1.jpg" alt="Studio Physics classroom" class="card-image">
+            <img src="studio1.jpg" alt="Aula de Studio Physics" class="card-image">
           </div>
+
           <div class="card">
-  <h3>Open education & textbooks</h3>
-  <p>
-    I actively develop and contribute to open educational resources (OER) in physics, focusing on accessible, high-quality materials for students in the life sciences.
-  </p>
+            <h3>Educación abierta y libros</h3>
+            <p>
+              Desarrollo y contribuyo a recursos educativos abiertos (OER) en física, con énfasis en materiales accesibles y de alta calidad para estudiantes de ciencias de la vida.
+            </p>
 
-  <div class="book-grid">
-    
-    <a href="https://openbooks.lib.msu.edu/collegephysics1/" target="_blank">
-      <img src="physics1.png" alt="Introductory Physics for the Health and Life Sciences I">
-      <span>Physics I (Health & Life Sciences)</span>
-    </a>
+            <div class="book-grid">
+              <a href="https://openbooks.lib.msu.edu/collegephysics1/" target="_blank" rel="noopener">
+                <img src="physics1.png" alt="Introductory Physics for the Health and Life Sciences I">
+                <span>Física I para ciencias de la salud y de la vida</span>
+              </a>
 
-    <a href="https://openbooks.lib.msu.edu/collegephysics2/" target="_blank">
-      <img src="physics2.jpg" alt="Introductory Physics for the Health and Life Sciences II">
-      <span>Physics II (Health & Life Sciences)</span>
-    </a>
+              <a href="https://openbooks.lib.msu.edu/collegephysics2/" target="_blank" rel="noopener">
+                <img src="physics2.jpg" alt="Introductory Physics for the Health and Life Sciences II">
+                <span>Física II para ciencias de la salud y de la vida</span>
+              </a>
 
-    <a href="https://openbooks.lib.msu.edu/isp201/" target="_blank">
-      <img src="isp.png" alt="Introductory Physics for Curious Minds">
-      <span>Physics for Curious Minds</span>
-    </a>
-
-  </div>
-</div>
+              <a href="https://openbooks.lib.msu.edu/isp201/" target="_blank" rel="noopener">
+                <img src="isp.png" alt="Introductory Physics for Curious Minds">
+                <span>Física para mentes curiosas</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -994,106 +998,102 @@
     <section id="group">
       <div class="container">
         <div class="section-heading">
-          <h2>Research group & students</h2>
+          <h2>Grupo de investigación y estudiantes</h2>
           <p class="lead">
-            I work with students and collaborators across nuclear physics, detector instrumentation, applied nuclear techniques, and physics education.
+            Trabajo con estudiantes y colaboradores en física nuclear, instrumentación de detectores, técnicas nucleares aplicadas y educación en física.
           </p>
         </div>
+
         <div class="grid-3">
-<div class="card">
-  <h3>FiTNAE Research Group</h3>
+          <div class="card">
+            <h3>Grupo de investigación FiTNAE</h3>
 
-  <p>
-    I am part of the Nuclear and High Energy Physics and Technology (FiTNAE) research group at Universidade da Coruña, based at CITENI in Ferrol.
-  </p>
+            <p>
+              Formo parte del grupo de Física y Tecnología Nuclear y de Altas Energías (FiTNAE) de la Universidade da Coruña, con sede en CITENI, en Ferrol.
+            </p>
 
-  <p>
-    The group focuses on experimental nuclear physics, particle physics, and technological applications, including the study of nuclear reactions with exotic beams, detector development, and applied nuclear techniques.
-  </p>
+            <p>
+              El grupo se centra en física nuclear experimental, física de partículas y aplicaciones tecnológicas, incluyendo el estudio de reacciones nucleares con haces exóticos, desarrollo de detectores y técnicas nucleares aplicadas.
+            </p>
 
-  <p>
-    Research activities span:
-  </p>
+            <p>Las actividades de investigación incluyen:</p>
 
-  <ul>
-    <li>Experimental nuclear physics and nuclear structure</li>
-    <li>Reactions with exotic beams and active target detectors</li>
-    <li>Radiation detector development (gas and solid-state detectors)</li>
-    <li>Neutron imaging and environmental radiation measurements</li>
-    <li>Radon detection and radiation protection applications</li>
-    <li>High-energy and particle physics (including LHCb-related work)</li>
-  </ul>
+            <ul>
+              <li>Física nuclear experimental y estructura nuclear</li>
+              <li>Reacciones con haces exóticos y detectores de blanco activo</li>
+              <li>Desarrollo de detectores de radiación gaseosos y de estado sólido</li>
+              <li>Imagen por neutrones y medidas de radiación ambiental</li>
+              <li>Detección de radón y aplicaciones de protección radiológica</li>
+              <li>Física de altas energías y de partículas, incluyendo trabajos relacionados con LHCb</li>
+            </ul>
 
-  <p>
-    The group combines fundamental research with industrial and societal applications, particularly in radiation measurement, environmental monitoring, and nuclear technology.
-  </p>
+            <p>
+              El grupo combina investigación fundamental con aplicaciones industriales y sociales, especialmente en medidas de radiación, monitorización ambiental y tecnología nuclear.
+            </p>
 
-  <p>
-    <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank">
-      View official FiTNAE page →
-    </a>
-  </p>
+            <p>
+              <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
+                Ver página oficial de FiTNAE →
+              </a>
+            </p>
+          </div>
 
-</div>
-<div class="card">
-  <h3>Current students</h3>
+          <div class="card">
+            <h3>Estudiantes actuales</h3>
 
-  <p><strong>Neutron imaging</strong></p>
-  <ul>
-    <li>Harriet Kumi</li>
-    <li>Miguel Saez</li>
-  </ul>
+            <p><strong>Imagen por neutrones</strong></p>
+            <ul>
+              <li>Harriet Kumi</li>
+              <li>Miguel Saez</li>
+            </ul>
 
-  <p><strong>Radon studies</strong></p>
-  <ul>
-    <li>Wilmer Camero</li>
-    <li>Emilio Lima</li>
-  </ul>
+            <p><strong>Estudios de radón</strong></p>
+            <ul>
+              <li>Wilmer Camero</li>
+              <li>Emilio Lima</li>
+            </ul>
 
-  <p><strong>Machine learning</strong></p>
-  <ul>
-    <li>Junior Castillo</li>
-  </ul>
+            <p><strong>Machine learning</strong></p>
+            <ul>
+              <li>Junior Castillo</li>
+            </ul>
 
-  <p><strong>Physics Education Research</strong></p>
-  <ul>
-    <li>David Ramsey</li>
-  </ul>
+            <p><strong>Investigación en educación en física</strong></p>
+            <ul>
+              <li>David Ramsey</li>
+            </ul>
 
-  <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--line);">
+            <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--line);">
 
-  <p>
-    <strong>Interested in joining?</strong><br>
-    I welcome motivated undergraduate and graduate students interested in exotic nuclei, detector instrumentation, neutron imaging, radon mitigation, or physics education research.
-  </p>
+            <p>
+              <strong>¿Te interesa unirte?</strong><br>
+              Doy la bienvenida a estudiantes motivados de grado, máster o doctorado interesados en núcleos exóticos, instrumentación de detectores, imagen por neutrones, mitigación de radón o investigación en educación en física.
+            </p>
 
-  <p>
-    <a href="mailto:saul.beceiro@udc.es" style="font-weight: 700;">Contact me to discuss opportunities →</a>
-  </p>
-</div>
-<div class="card">
-  <h3>International collaborations</h3>
-  <p>
-    My research is supported by a broad international network of collaborations across leading universities, national laboratories, and large-scale facilities.
-  </p>
+            <p>
+              <a href="mailto:saul.beceiro@udc.es" style="font-weight: 700;">Contáctame para discutir oportunidades →</a>
+            </p>
+          </div>
 
-  <div class="collab-logos">
+          <div class="card">
+            <h3>Colaboraciones internacionales</h3>
+            <p>
+              Mi investigación está apoyada por una amplia red internacional de colaboraciones con universidades, laboratorios nacionales e instalaciones científicas de gran escala.
+            </p>
 
-    <img src="frib_logo.jpeg" alt="FRIB">
-    <img src="TRIUMF.png" alt="TRIUMF">
-    <img src="Argonne.PNG" alt="Argonne National Laboratory">
-    <img src="notredame.png" alt="University of Notre Dame">
-    <img src="ific.png" alt="IFIC Valencia">
-    <img src="iem.png" alt="CSIC IEM">
-    <img src="cna.jpg" alt="Centro Nacional de Aceleradores">
-    <img src="jrc-geel.jpg" alt="JRC Geel">
-    <img src="gsi.jpg" alt="GSI / FAIR">
-    <img src="r3b.jpeg" alt="R3B Collaboration">
-    
-    
-
-  </div>
-</div>
+            <div class="collab-logos">
+              <img src="frib_logo.jpeg" alt="FRIB">
+              <img src="TRIUMF.png" alt="TRIUMF">
+              <img src="Argonne.PNG" alt="Argonne National Laboratory">
+              <img src="notredame.png" alt="University of Notre Dame">
+              <img src="ific.png" alt="IFIC Valencia">
+              <img src="iem.png" alt="CSIC IEM">
+              <img src="cna.jpg" alt="Centro Nacional de Aceleradores">
+              <img src="jrc-geel.jpg" alt="JRC Geel">
+              <img src="gsi.jpg" alt="GSI / FAIR">
+              <img src="r3b.jpeg" alt="R3B Collaboration">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1101,28 +1101,28 @@
     <section id="mentorship">
       <div class="container">
         <div class="section-heading">
-          <h2>Mentorship & service</h2>
+          <h2>Mentoría y servicio</h2>
           <p class="lead">
-            Mentoring students, teaching assistants, and early-career researchers is central to my academic work.
+            La mentoría de estudiantes, ayudantes docentes e investigadores en etapas tempranas es una parte central de mi actividad académica.
           </p>
         </div>
         <div class="grid-2">
           <div class="card">
-            <h3>Mentorship</h3>
+            <h3>Mentoría</h3>
             <ul>
-              <li>Supervised or mentored more than 500 undergraduate students.</li>
-              <li>Mentored more than 200 graduate teaching assistants.</li>
-              <li>Mentored more than 300 undergraduate learning assistants.</li>
-              <li>Supervision and thesis committee service at UDC and MSU.</li>
+              <li>Supervisión o mentoría de más de 500 estudiantes de grado.</li>
+              <li>Mentoría de más de 200 ayudantes docentes de posgrado.</li>
+              <li>Mentoría de más de 300 learning assistants de grado.</li>
+              <li>Supervisión de tesis y participación en comités en UDC y MSU.</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Leadership & service</h3>
+            <h3>Liderazgo y servicio</h3>
             <ul>
-              <li>Founding Director, FiTNAE Research Group, Universidade da Coruña.</li>
-              <li>Chair, R3B High Resolution Spectrometer Working Group.</li>
-              <li>Vice-Chair, R3B Active Targets Working Group.</li>
-              <li>Member of scientific and academic committees in nuclear physics and higher education.</li>
+              <li>Director fundador del grupo FiTNAE, Universidade da Coruña.</li>
+              <li>Presidente del grupo de trabajo High Resolution Spectrometer de R3B.</li>
+              <li>Vicepresidente del grupo de trabajo Active Targets de R3B.</li>
+              <li>Miembro de comités científicos y académicos en física nuclear y educación superior.</li>
             </ul>
           </div>
         </div>
@@ -1132,36 +1132,36 @@
     <section id="awards">
       <div class="container">
         <div class="section-heading">
-          <h2>Awards & honors</h2>
-          <p class="lead">Recognition for teaching, open education, accessibility, STEM pedagogy, and academic excellence.</p>
+          <h2>Premios y reconocimientos</h2>
+          <p class="lead">Reconocimientos por docencia, educación abierta, accesibilidad, pedagogía STEM y excelencia académica.</p>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-date">2020</div>
             <div>
               <div class="timeline-title">MSU OER Leadership Award · Norman L. & Olga K. Fritz Teaching Excellence Award · HUB Catalyst Award</div>
-              <div class="timeline-text">Recognition for open education, teaching excellence, and educational innovation.</div>
+              <div class="timeline-text">Reconocimiento por educación abierta, excelencia docente e innovación educativa.</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2019</div>
             <div>
               <div class="timeline-title">Teaching Accessibility Fellowship · Adams Academy Fellow</div>
-              <div class="timeline-text">Support for accessible, inclusive, and innovative teaching practices.</div>
+              <div class="timeline-text">Apoyo a prácticas docentes accesibles, inclusivas e innovadoras.</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2017–2016</div>
             <div>
               <div class="timeline-title">HHMI STEM Gateway Fellow · Thomas H. Osgood Teaching Excellence Award</div>
-              <div class="timeline-text">Recognition for STEM education and undergraduate teaching excellence.</div>
+              <div class="timeline-text">Reconocimiento por educación STEM y excelencia docente en grado.</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2006</div>
             <div>
-              <div class="timeline-title">Extraordinary Undergraduate Award, Xunta de Galicia</div>
-              <div class="timeline-text">Award for academic excellence in undergraduate physics studies.</div>
+              <div class="timeline-title">Premio Extraordinario de Fin de Carrera, Xunta de Galicia</div>
+              <div class="timeline-text">Reconocimiento a la excelencia académica en los estudios de Física.</div>
             </div>
           </div>
         </div>
@@ -1172,33 +1172,35 @@
       <div class="container">
         <div class="contact-box">
           <div>
-            <h2>Contact</h2>
+            <h2>Contacto</h2>
             <p>
-              I welcome inquiries about nuclear physics collaborations, detector instrumentation, student supervision, physics education, and invited lectures.
+              Estoy abierto a colaboraciones en física nuclear, instrumentación de detectores, supervisión de estudiantes, educación en física y conferencias invitadas.
             </p>
           </div>
           <div>
             <p><strong>Email:</strong> <a href="mailto:saul.beceiro@udc.es">saul.beceiro@udc.es</a></p>
             <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">0000-0003-2295-473X</a></p>
-            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Profile</a></p>
-            <p><strong>Affiliations:</strong> CITENI · Campus Industrial · UDC · FRIB · MSU · AIMS Senegal</p>
-            <div class="footer-logos" aria-label="Affiliation logos">
-  <a href="https://www.udc.es/es/online/" target="_blank" rel="noopener">
-    <img src="udc.png" alt="Universidade da Coruña logo">
-  </a>
-  <a href="https://citeni.udc.es/en/" target="_blank" rel="noopener">
-    <img src="citeni.png" alt="CITENI logo">
-  </a>
-  <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
-    <img src="fitnae.png" alt="FiTNAE Research Group logo">
-  </a>
-  <a href="https://campusindustrial.udc.es/en/" target="_blank" rel="noopener">
-    <img src="campusindustrial.png" alt="Campus Industrial logo">
-  </a>
-</div>
+            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">Perfil</a></p>
+            <p><strong>Afiliaciones:</strong> CITENI · Campus Industrial · UDC · FRIB · MSU · AIMS Senegal</p>
+
+            <div class="footer-logos" aria-label="Logos de afiliación">
+              <a href="https://www.udc.es/es/online/" target="_blank" rel="noopener">
+                <img src="udc.png" alt="Logo de la Universidade da Coruña">
+              </a>
+              <a href="https://citeni.udc.es/en/" target="_blank" rel="noopener">
+                <img src="citeni.png" alt="Logo de CITENI">
+              </a>
+              <a href="https://investigacion.udc.es/es/Research/Details/G000825" target="_blank" rel="noopener">
+                <img src="fitnae.png" alt="Logo del grupo FiTNAE">
+              </a>
+              <a href="https://campusindustrial.udc.es/en/" target="_blank" rel="noopener">
+                <img src="campusindustrial.png" alt="Logo de Campus Industrial">
+              </a>
+            </div>
+
             <div class="actions">
-              <a class="button" href="mailto:saul.beceiro@udc.es">Email me</a>
-              <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Download CV</a>
+              <a class="button" href="mailto:saul.beceiro@udc.es">Escríbeme</a>
+              <a class="button" href="BeceiroNovo_CV2025_EN.pdf" download>Descargar CV</a>
             </div>
           </div>
         </div>
@@ -1208,7 +1210,7 @@
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Saúl Beceiro Novo. Built for GitHub Pages.
+      © <span id="year"></span> Saúl Beceiro Novo. Creado con GitHub Pages.
     </div>
   </footer>
 
