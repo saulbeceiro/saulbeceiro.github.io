@@ -46,6 +46,16 @@
       text-decoration: underline;
       color: var(--accent-dark);
     }
+    .icon-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-button img {
+  height: 18px;
+  width: auto;
+}
 
     .container {
       width: min(1120px, calc(100% - 40px));
@@ -724,12 +734,16 @@
             <a class="button primary" href="BeceiroNovo_CV2025_EN.pdf" download>
               <span aria-hidden="true">⬇</span> Download CV
             </a>
-            <a class="button secondary" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank" rel="noopener">
-              <span aria-hidden="true">🎓</span> Google Scholar
-            </a>
-            <a class="button secondary" href="https://orcid.org/0000-0003-2295-473X" target="_blank" rel="noopener">
-              <span aria-hidden="true">ⓘD</span> ORCID
-            </a>
+              <a class="button icon-button" href="https://scholar.google.com/citations?user=hyZDX0cAAAAJ" target="_blank">
+    <img src="google-scholar.png" alt="Google Scholar">
+    Google Scholar
+  </a>
+
+  <a class="button icon-button" href="https://orcid.org/0000-0003-2295-473X" target="_blank">
+    <img src="orcid-logo.jpeg" alt="ORCID">
+    ORCID
+  </a>
+
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile highlights">
