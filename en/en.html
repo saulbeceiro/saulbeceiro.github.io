@@ -406,6 +406,31 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
+    .section-intro {
+  max-width: 700px;
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.service-item {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.service-role {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
 
     .card {
       background: var(--card);
@@ -683,6 +708,7 @@
         <a href="#teaching">Teaching</a>
         <a href="#group">Group</a>
         <a href="#mentorship">Mentorship</a>
+        <a href="#service">Service</a>
         <a href="#contact">Contact</a>
           <!-- Language switch -->
         <span class="lang-switch">
@@ -1171,6 +1197,43 @@
         </div>
       </div>
     </section>
+    <section id="service">
+  <div class="container">
+
+    <h2>Service to the Community</h2>
+
+    <p class="section-intro">
+      My service activities focus on academic governance, international representation,
+      and the promotion of education, culture, and scientific collaboration.
+    </p>
+
+    <div class="service-grid">
+
+      <!-- MSU -->
+      <div class="service-item">
+        <h3>🏛 Michigan State University</h3>
+        <p class="service-role">Senator — College of Natural Science</p>
+        <p>
+          I serve as an elected Senator representing the College of Natural Science at Michigan State University,
+          contributing to shared governance, academic policy, and institutional decision-making processes.
+        </p>
+      </div>
+
+      <!-- CRE -->
+      <div class="service-item">
+        <h3>🌍 Spanish Representation Abroad</h3>
+        <p class="service-role">CRE Chicago & CGCEE Representative</p>
+        <p>
+          Member of the Consejo de Residentes Españoles (CRE) for the Consulate of Spain in Chicago.
+          I also serve as a representative in the Consejo General de la Ciudadanía Española en el Exterior (CGCEE),
+          focusing on the commission for education, culture, and sports.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="contact">
       <div class="container">
