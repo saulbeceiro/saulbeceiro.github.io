@@ -91,6 +91,31 @@
       color: var(--text);
       font-size: 1.05rem;
     }
+    .section-intro {
+  max-width: 700px;
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.service-item {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.service-role {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
 
     .nav-links {
       display: flex;
@@ -690,6 +715,7 @@
         <a href="#teaching">Docencia</a>
         <a href="#group">Grupo</a>
         <a href="#mentorship">Mentoría</a>
+        <a href="#service">Servicio</a>
         <a href="#contact">Contacto</a>
         <span class="lang-switch">
           ES | <a href="en/en.html">EN</a>
@@ -1173,6 +1199,41 @@
         </div>
       </div>
     </section>
+    <section id="service">
+  <div class="container">
+
+    <h2>Servicio a la comunidad</h2>
+
+    <p class="section-intro">
+      Mis actividades de servicio se centran en la gobernanza académica,
+      la representación internacional y la promoción de la educación, la cultura y la colaboración científica.
+    </p>
+
+    <div class="service-grid">
+
+      <div class="service-item">
+        <h3>🏛 Michigan State University</h3>
+        <p class="service-role">Senador — College of Natural Science</p>
+        <p>
+          Actúo como senador electo en representación del College of Natural Science en Michigan State University,
+          contribuyendo a la gobernanza universitaria, políticas académicas y procesos de toma de decisiones.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>🌍 Representación española en el exterior</h3>
+        <p class="service-role">CRE Chicago & CGCEE</p>
+        <p>
+          Miembro del Consejo de Residentes Españoles (CRE) del Consulado de España en Chicago
+          y representante en el Consejo General de la Ciudadanía Española en el Exterior (CGCEE),
+          centrando mi labor en la comisión de educación, cultura y deporte.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="contact">
       <div class="container">
